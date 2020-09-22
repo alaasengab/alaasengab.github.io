@@ -1,0 +1,479 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*-----------Header css-----------*/
+#header
+{
+    height: 100vh;
+    background-image: url(img/Back1.jpg.JPG);  /* the picture is not working play around wiht another one */ 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.userbox
+{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+
+}
+.userbox img
+{
+    border-radius:50%;
+    width: 450px; 
+    border: 1px solid #6caed5;
+}
+.userbox h1
+{
+    color:white;
+    font-weight: bold;
+    font-family: cursive;
+    shape-margin: 10px;
+    font-size: 60;
+    text-align: center;
+}
+.userbox P
+{
+    color: white;
+    font-weight: lighter;
+    font-family:cursive;
+    font-size: 60;
+    text-align: center;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 1px; 
+    animation: typing 5s steps(50,end),
+        blink-caret .3s step-end infinite;
+}
+
+@keyframes typing 
+{
+    from {width:0 } to {width:100%}
+}
+@keyframes blink-caret{
+    from, to{border-color:transparent}
+    10%{border-color: transparent}
+}
+    
+@keyframes mover
+{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+/*------------About---------*/
+.nav-bar
+{
+    top:0;
+    position: sticky;
+    z-index: 3;
+}
+.navbar
+{
+    background-color: #000;   
+}
+.navbar-brand img
+{
+    height: 50px;
+}
+.nav-bar .fa-bars  /*-----this is not working---*/
+{
+    font-size: 35px;
+    color:red;
+}
+.skills-bar p
+{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+/*------------------About------*/
+
+.about
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.ventilator
+{
+    height: 150px;
+    width: 150px;
+    padding-right:10px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px; 
+}
+
+.mecha
+{
+    height: 150px;
+    width: 150px;
+    padding-right: 10px;
+}
+
+/*-----.card
+{
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.card:hover
+{
+    transform: rotateY(-180deg);
+    transition: 0.1s;
+    
+}
+.card .side
+{
+    backface-visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    
+}
+.card .back
+{
+    background: azure;
+    color:black;
+    text-align: centre;
+    transform: rotateY(180deg);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 25px;
+    font-family: serif;
+}
+----*/
+
+/*--.about h3 
+{
+    font-size: 40px;
+    font-family: cursive;
+    color: darkgrey;
+}
+--*/
+.vid{
+    
+    padding-bottom: 50px;
+}
+.who
+{
+    padding-top: 30px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 100px;
+    width: 500;
+    height: 375;
+    
+}
+
+.about p 
+{
+    font-size: 25px;
+    padding-top: 30px;
+    font-family: cursive;
+    color:black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left:30px;
+    text-align:justify;
+    
+}
+
+.about p:hover
+{
+    background: azure;
+    color: black;
+    font-size: 30px;
+    font-family: cursive;    
+}
+
+
+.progress
+{
+    border-radius: 16px;
+}
+
+.progress-bar
+{
+    border-radius: 16px;
+}
+/*-------Resume--------------*/
+
+
+.resume h3
+{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: black;
+    font-family:cursive;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+
+.resume h3:hover
+{
+    position: relative;
+    padding-bottom: 10px;
+    top: -5px;
+}
+
+.resume 
+{
+    padding-top:50px;
+    padding-bottom: 30px;
+    background:linear-gradient(70deg,wheat,white);
+}
+.resume p
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    color:black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    padding-left:5px;
+    padding-right: 5px;
+}
+.resume p:hover
+{
+    background-color: azure;
+    position: relative;
+    top: -10px; 
+}
+
+/*---- here for the line before the timeline*/
+
+
+
+.timeline
+{
+    list-style-type:none;
+    position: relative;
+}
+
+.timeline:before
+{
+ content: '';
+ background: black;
+ display:inline-block;
+ position: absolute;
+ left:29px;
+ width:2px;
+ height: 100%; 
+ z-index: 1;
+
+}
+.timeline li
+{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px;
+}
+.timeline li h4 
+{
+    background-color:black;
+    padding: 5px 0 5px 20px;
+    color: white;
+    font-size: 20px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+ /*-   transform-style: preserve-3d;
+    transition: all 8s ease-in-out;--*/
+    
+}
+.timeline li h4:hover
+{
+    position: relative;
+    top: -10px;
+    
+}
+.timeline li h4 span 
+{
+    font-weight: bold;
+    color:dimgray;  
+}
+.timeline li 
+{
+    border-bottom-left-radius: 15px;
+}
+/* this to add the empty circles before the bullet points*/ 
+.timeline li:before
+{
+    content:"";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid black;
+    left: 20px;
+    width:20px;
+    height:20px;
+    z-index:1;
+    
+}
+
+
+/* Here for the references and services box*/
+.service-box
+{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px;
+}
+.services h4
+{
+    padding-bottom: 10px;
+    padding-top: 20px;
+    color: black;
+    font-family:cursive;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+
+.services h4:hover
+{
+    position: relative;
+    padding-bottom: 5px;
+    top: -5px;
+}
+
+
+.service-box h5
+{
+    background-color:black;
+    padding: 5px 0 5px 20px;
+    color: white;
+    font-size: 20px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.service-box .fa
+{
+    margin: 0 10px;
+    font-size: 20px;
+}
+.serivce-box span
+{ 
+    margin:3px;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.service-box p 
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    color:black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+
+.service-box:hover p 
+{
+    background: azure;
+    top: -5px;
+}
+
+/*-----------------------*/
+
+.contact.row
+{
+    padding:30px 0;
+    font-size: 22px;
+}
+.contact .col-md-4 .fa 
+{
+    padding: 10px;
+    font-size: 40px;
+}
+.contact
+{
+    background-color: azure;
+}
+.contact .btn
+{
+    padding: 10px 25px 10px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid black;
+    background: transparent;
+}
+.contact .btn:focus
+{
+    box-shadow: none !important;
+}
+.contact .btn:hover
+{
+    border: 2px solid balck !important;
+    background: black !important;
+    transition: 0.6s;
+    color:white;
+}
+.contact .btn .fa 
+{
+    margin: 10px;
+}
+
+contact .p
+{
+    font-size: 15px;
+    font-family: serif;
+    font-style: oblique;
+    
+}
+
+/*-----------Social-Icons-----------*/
+.social-icons 
+{
+    top:50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 80px;
+}
+.social-icons ul
+{
+    padding: initial; /*----no space of the left side */
+}
+.social-icons ul li
+{
+    height: 40px;
+    width:40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    color: white;
+    background: black;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+.social-icons ul li:hover
+{
+    padding-left: 30px;
+    width:80px;
+    transition: 1s;
+    
+}
